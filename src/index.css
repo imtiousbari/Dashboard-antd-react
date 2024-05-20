@@ -11,3 +11,38 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.dashboard-logo{
+  width: 150px;
+  height: auto;
+  /* padding: 10px; */
+}
+.header{
+  display: flex;
+  padding-top: 10px;
+  padding-left: 10px;
+  align-items: center;
+}
+.ant-layout-sider-children{
+  margin-top: 10px !important;
+  padding: 15px !important;
+}
+.ant-card{
+border: 0px !important;
+}
+.ant-card-body{
+padding: 0 !important;  
+margin: 0 !important;
+}
+.login-input{
+  border-color: white;
+}
+
+.login-input:hover{
+  border-color: #EC9754;
+
+}
+.login-input:focus{
+  border-color: #EC9754;
+
+}
+/* } */
