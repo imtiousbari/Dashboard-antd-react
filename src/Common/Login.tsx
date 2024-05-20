@@ -3,6 +3,7 @@ import { Row, Col, Card, Form, Input, Button, message } from "antd";
 import loginimg from "../Images/loginimg.jpg";
 import { UserOutlined, LockOutlined } from "@ant-design/icons";
 
+  
 const LoginPage = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -31,7 +32,9 @@ const LoginPage = () => {
         alignItems: "center",
         minHeight: "100vh", 
       }}
+      
     >
+        
 
 <Row justify="center">
     <Col xs={24} sm={20} md={16} lg={12} xl={10} xxl={12}>
@@ -125,7 +128,10 @@ const LoginPage = () => {
         </Row>
 
       </Card>
+      <p style={{ color: 'white', textAlign: 'center' }}>© Imtious Dev. <span id="year">{new Date().getFullYear()}</span> | All rights reserved.</p>
+
     </Col>
+    
   </Row>
       {/* <Card style={{ width: "50%", borderRadius: 20, background: '#50887c' }}>
         <Row>
