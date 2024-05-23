@@ -1,14 +1,18 @@
 import React from 'react';
-import { Button } from 'antd';
-import Dashboard from './HomePage/Dashboard';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LoginPage from "../src/Common/Login";
+import Dashboard from "../src/HomePage/Dashboard";
 
-const App: React.FC = () => (
-  <div className="App">
-    {/* <Dashboard/> */}
-    <LoginPage/>
-  </div>
-);
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<LoginPage />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+    </Router>
+  );
+}
 
 export default App;
 
